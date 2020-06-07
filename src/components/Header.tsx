@@ -9,6 +9,8 @@ import InputBase from '@material-ui/core/InputBase';
 import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import SearchIcon from '@material-ui/icons/Search';
+import Badge from '@material-ui/core/Badge';
+import NotificationsIcon from '@material-ui/icons/Notifications';
 
 import logo from './../assets/logo.png';
 
@@ -134,6 +136,11 @@ export default function Header(props: any) {
                         />
                     </div>
                     <div className={classes.grow} />
+                    <IconButton aria-label="show 17 new notifications" color="inherit">
+                        <Badge badgeContent={17} color="secondary">
+                            <NotificationsIcon />
+                        </Badge>
+                    </IconButton>
                     <IconButton
                         color="inherit"
                         aria-label="User Profile"
